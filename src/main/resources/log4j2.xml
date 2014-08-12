@@ -9,7 +9,7 @@
         </File>
     </Appenders>
     <Loggers>
-        <Root level="trace">
+        <Root level="info">  <!-- use trace for perf monitoring -->
             <AppenderRef ref="Console" />
             <AppenderRef ref="MyFile"/>
         </Root>
