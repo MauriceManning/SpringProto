@@ -18,6 +18,11 @@ package edu.berkeley.path.next.modelEngine;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+/**
+ * This application launches the model engine service which listens for updates from
+ * the traffic data processing and then launches a model execution.
+ */
+
 public class modeEngineApp {
 
 

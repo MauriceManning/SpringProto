@@ -6,6 +6,10 @@ import javax.persistence.Id;
 import javax.persistence.Entity;
 
 
+/**
+ * LinkData POJO that represents a single link in the network.
+ */
+
 @Entity
 public class LinkData {
 

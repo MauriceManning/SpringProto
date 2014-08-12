@@ -18,6 +18,13 @@ package edu.berkeley.path.next.decisionService;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+/**
+ * This application launches the decision service which listens for updates from
+ * services such as traffic data processing and the model engine. Currently it is
+ * only connected to the traffic data processing.
+ */
+
+
 public class DecisionServiceApp {
 
     public static void main(String[] args) {

@@ -21,6 +21,11 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.integration.annotation.ServiceActivator;
 import org.springframework.stereotype.Component;
 
+/**
+ * This is the listener class for the decision service. When a status update is
+ * received simply log the incoming message.
+ */
+
 @Component
 public class MessageListener {
 

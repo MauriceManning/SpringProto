@@ -7,7 +7,10 @@ import org.springframework.transaction.annotation.Transactional;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-
+/**
+ * This class creates a connection to the database. When the storeLinkData method
+ * is called it creates a new session, stores the object then closes the session.
+ */
 
 public class DBChannel {
     private SessionFactory sessionFactory;

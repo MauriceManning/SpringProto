@@ -26,6 +26,11 @@ import org.apache.logging.log4j.Logger;
 @Component
 public class JmsPublish {
 
+    /**
+     * Autowired annotation denotes member to be conncted by Spring's dependency injection
+     * facilities Fields are injected right after construction of a bean, before any
+     * config methods are invoked.
+     */
     @Autowired
     private JmsTemplate jmsTemplate;
 

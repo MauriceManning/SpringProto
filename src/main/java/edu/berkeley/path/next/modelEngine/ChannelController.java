@@ -5,13 +5,22 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
- * Created by mauricemanning on 8/9/14.
+ * This class represents a connection to a repository. When the addLinkData method
+ * is called by the model runner service it creates a link data object and
+ * persists it in the repository.
  */
+
+
 public class ChannelController {
 
 
+    /**
+     * Autowired annotation denotes member to be conncted by Spring's dependency injection
+     * facilities Fields are injected right after construction of a bean, before any
+     * config methods are invoked.
+     */
     @Autowired
-    private DBChannel channel;
+    private DBChannel repository;
 
     public String addLinkData() {
         LinkData linkData = new LinkData();
@@ -22,7 +31,7 @@ public class ChannelController {
         linkData.setSpeed(5);
         linkData.setVehiclecount(6);
 
-        channel.storeLinkData(linkData);
+        repository.storeLinkData(linkData);
 
         return "/result.jsp";
     }

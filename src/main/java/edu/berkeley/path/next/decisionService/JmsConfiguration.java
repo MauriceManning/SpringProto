@@ -23,6 +23,11 @@ import org.springframework.jms.connection.CachingConnectionFactory;
 
 import javax.jms.ConnectionFactory;
 
+/**
+ * This is the listener configuration for the decision service. It connects
+ * the listener to a broker using a connection factory.
+ */
+
 @Configuration
 public class JmsConfiguration {
     @Bean
