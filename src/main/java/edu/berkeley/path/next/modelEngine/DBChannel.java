@@ -29,13 +29,13 @@ public class DBChannel {
 
         try {
             Session session = sessionFactory.openSession();
-            logger.info("DBChannel storeLinkData openSession: ");
+            logger.info("DBChannel storeLinkData openSession ");
             Integer id = (Integer) session.save(ld);
-            logger.info("DBChannel storeLinkData save id: " + id);
+            logger.info("DBChannel storeLinkData save id {} ", id);
             session.flush();
             session.close();
         } catch (Exception ex) {
-            logger.info("DBChannel storeLinkData Exception ex: " + ex.toString());
+            logger.info("DBChannel storeLinkData Exception ex: {}",  ex.toString());
         }
     }
 

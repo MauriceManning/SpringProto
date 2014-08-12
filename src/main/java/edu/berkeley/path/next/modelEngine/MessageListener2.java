@@ -34,7 +34,8 @@ public class MessageListener2 {
     public void handleMessage(String status) {
         final Logger logger = LogManager.getLogger(MessageListener2.class.getName());
 
-        logger.info("model engine updated: " + status);
+        //use SLF interface which provides for parameterized logging
+        logger.info("model engine updated: {}", status);
         runner.runModel();
 
 

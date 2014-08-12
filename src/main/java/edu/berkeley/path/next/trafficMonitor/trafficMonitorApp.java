@@ -41,7 +41,8 @@ public class trafficMonitorApp {
         int x = 0;
         String msg = "status";
         while (x < 7) {
-            logger.info("trafficMonitorApp sendTrafficUpdate ");
+            //use SLF interface which provides for parameterized logging
+            logger.info("trafficMonitorApp sendTrafficUpdate {} ", x);
             jmsPublish.sendTrafficUpdate(msg);
             Thread.sleep(3000);
             x++;
